@@ -59,8 +59,8 @@ while name != "Xxx" and count != MAX_TICKETS:
             print(f"\nSorry, you are too young to order a ticket")
         else:
             while age <= MAX_AGE:
-                age = number_checker(
-                    "Please enter an integer between 12 and 110")
+                age = number_checker(f"\nAt {age} {name} is very old."
+                                     f"\nPlease re-enter {name}'s age: ")
             count += 1
 
 if count < MAX_TICKETS:
